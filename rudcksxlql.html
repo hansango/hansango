@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>옷 웹페이지</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        article {
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 45%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* 넓혀진 이미지 스타일 */
+        article:nth-child(2) img {
+            max-width: 30%;
+            width: 30%; /* 이미지의 최대 너비를 100%로 설정 */
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>옷 웹페이지</h1>
+    </header>
+
+    <section>
+        <a href="#">
+            <article>
+                <h2>신상품 소개</h2>
+                <img src="옷이미지1.jpg" alt="옷 이미지 1">
+                <p>이번 시즌의 핫 아이템! 멋진 디자인과 편안한 착용감으로 눈길을 사로잡습니다.</p>
+            </article>
+        </a>
+        <article>
+            <h2>인기 상품</h2>
+            <img src="옷이미지2.jpg" alt="옷 이미지 2">
+            <p>고객들에게 사랑받는 제품! 다양한 컬러와 사이즈로 제공됩니다.</p>
+        </article>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2023 옷 웹페이지. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
